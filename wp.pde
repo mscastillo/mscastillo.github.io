@@ -1,7 +1,7 @@
 
 
 randomSeed(114) ; // seed initialization, comment it for actual randomness
-float canvas_size_x = window.innerWidth , canvas_size_y = window.innerHeight ;
+float canvas_size_x = document.body.clientWidth , canvas_size_y = window.innerHeight ;
 float fps = 14.0 ;
 float x = canvas_size_x*random(-0.5,0.5) , y = canvas_size_y*random(-0.5,0.5) ;
 float start_x = x , start_y = y ;
