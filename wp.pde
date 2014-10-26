@@ -9,10 +9,10 @@ float drift_x = x - abs(x)*(canvas_size_x*0.1)/x , drift_y = y - abs(y)*(canvas_
 float d_x = drift_x-start_x , d_y = drift_y-start_y ;
 float mu_x = mu_x = d_x/sqrt(d_x*d_x+d_y*d_y) , mu_y = d_y/sqrt(d_x*d_x+d_y*d_y) ;
 boolean draw_particle = true ;
-int maxtracelength = 0.9*canvas_size_x ;
+int maxtracelength = 0.5*canvas_size_x ;
 int tracelength = constrain( 1,1,maxtracelength ) ;
 int tracestep = 1 ;
-float vx = 0.25*canvas_size_x/fps , vy = 0.25*canvas_size_x/fps ;
+float vx = 0.2*canvas_size_x/fps , vy = 0.2*canvas_size_x/fps ;
 float[] tracex = new float[tracelength] , tracey = new float[tracelength] ;
 boolean[] borderx = new boolean[tracelength] , bordery = new boolean[tracelength] ;
 color c1 = color(153,204,238) , c2 = color(153,204,238) , c3 = color(51,51,51) ;
