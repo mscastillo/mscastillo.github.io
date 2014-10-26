@@ -12,7 +12,7 @@ boolean draw_particle = true ;
 int maxtracelength = 0.9*canvas_size_x ;
 int tracelength = constrain( 1,1,maxtracelength ) ;
 int tracestep = 1 ;
-float vx = 0.25*canvas_size_x/fps , vy = 0.25*canvas_size_y/fps ;
+float vx = 0.25*canvas_size_x/fps , vy = 0.25*canvas_size_x/fps ;
 float[] tracex = new float[tracelength] , tracey = new float[tracelength] ;
 boolean[] borderx = new boolean[tracelength] , bordery = new boolean[tracelength] ;
 color c1 = color(153,204,238) , c2 = color(153,204,238) , c3 = color(51,51,51) ;
@@ -116,12 +116,13 @@ void plot_axis() {
    line( i , j , i , j+1 ) ;
   }//endfor
  }//endfor
+/* 
  for( i = 0 ; i<=width ; i=i+10 ) {
   stroke( 96 ) ; strokeWeight( 1 ) ; noFill() ; 
   line( i , 0.5*height , i+5 , 0.5*height ) ;
   line( 0.5*width , i , 0.5*width , i+5 ) ;
  }//endfor
- 
+*/ 
 }
 
 float randn() {
