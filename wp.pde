@@ -12,7 +12,7 @@ boolean draw_particle = true ;
 int maxtracelength = 0.5*canvas_size_x ;
 int tracelength = constrain( 1,1,maxtracelength ) ;
 int tracestep = 1 ;
-float vx = 0.2*canvas_size_x/fps , vy = 0.2*canvas_size_x/fps ;
+float vx = 0.1*canvas_size_x/fps , vy = 0.1*canvas_size_x/fps ;
 float[] tracex = new float[tracelength] , tracey = new float[tracelength] ;
 boolean[] borderx = new boolean[tracelength] , bordery = new boolean[tracelength] ;
 color c1 = color(153,204,238) , c2 = color(153,204,238) , c3 = color(51,51,51) ;
