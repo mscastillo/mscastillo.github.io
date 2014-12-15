@@ -1,5 +1,4 @@
 
-
 randomSeed(114) ; // seed initialization, comment it for actual randomness
 float canvas_size_x = document.body.clientWidth , canvas_size_y = 50 ; // window.innerHeight ;
 float fps = 14.0 ;
@@ -15,7 +14,7 @@ int tracestep = 1 ;
 float vx = 0.1*canvas_size_x/fps , vy = 0.1*canvas_size_x/fps ;
 float[] tracex = new float[tracelength] , tracey = new float[tracelength] ;
 boolean[] borderx = new boolean[tracelength] , bordery = new boolean[tracelength] ;
-color c1 = color(153,204,238) , c2 = color(153,204,238) , c3 = color(32,32,32) ;
+color c1 = color(153,204,238) , c2 = color(153,204,238) , c3 = color(48,48,48) ;
 color c4 = color(204,153,255) ;
 
 
