@@ -36,3 +36,12 @@ float:right
 .tooltip-wider .tooltip {
 min-width:250px
 }
+
+p.keywords {
+font-size:1.2em ;
+line-height:1.75em
+}
+
+p.keywords span {
+margin-right:0.25em ;
+}
