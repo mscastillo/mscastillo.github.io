@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="bootstrap-3.2.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.css">
-    <link rel="stylesheet" href="stylesheets/estilo0.css">
+    <link rel="stylesheet" href="stylesheets/estilo.css">
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
 	<script type="text/javascript" src="javascript.js"></script>
 	<script type="text/javascript" src="processing.js"></script>
 	
@@ -25,11 +26,10 @@
   </head>
   
   <body>
-  
-  	<div class="navbar navbar-default navbar-fixed-top">		
-  	
-  		<canvas data-processing-sources="wp.pde" style="position:absolute;float:left"></canvas>
 
+  	<div class="navbar navbar-default navbar-fixed-top" id="nav-top">		
+  	
+  	  <canvas data-processing-sources="wp.pde" style="position:absolute;float:left" class="wienner"></canvas>
   	
       <div class="container">
         <div class="navbar-header" style="color:#FFFFFF">
@@ -43,16 +43,16 @@
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
             <li>
-              <a href="#">Contact</a>
+              <a href="#welcome">Welcome</a>
             </li>
             <li>
-              <a href="#">Education</a>
+              <a href="#education">Education</a>
             </li>
             <li>
-              <a href="#">Research</a>
+              <a href="#research">Research</a>
             </li>
             <li>
-              <a href="#">Publications</a>
+              <a href="#publications">Publications</a>
             </li>
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles<b class="caret"></b></a>
@@ -62,10 +62,10 @@
 							<i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-flask fa-stack-1x fa-inverse"></i>
 						</span>
 					</li>
-                    <li><a href="#">Scopus</a></li>
-                    <li><a href="#">ORCiD</a></li>
-                    <li><a href="#">Google Scholar</a></li>
-                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="http://www.scopus.com/authid/detail.url?authorId=36740065700" target="_blank">Scopus</a></li>
+                    <li><a href="http://orcid.org/0000-0002-4204-391X" target="_blank">ORCiD</a></li>
+                    <li><a href="http://scholar.google.es/citations?user=qulgu8EAAAAJ" target="_blank">Google Scholar</a></li>
+                    <li><a href="http://lnkd.in/Yy3JD7" target="_blank">LinkedIn</a></li>
                     <li><a href="#">Research Gate</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header"><span class="pull-left" style="line-height:2em;font-weight:bold">Development</span> 
@@ -73,77 +73,119 @@
 							<i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse"></i>
 						</span>
 					</li>
-                    <li><a href="#">Github</a></li>
-                    <li><a href="#">BitBucket</a></li>
+                    <li><a href="https://github.com/mscastillo" target="_blank">Github</a></li>
+                    <li><a href="https://bitbucket.org/mscastillo" target="_blank">BitBucket</a></li>
             	</ul>
 			</li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li>
-				<a href="#">Wiener process</a>	
+				<a href="http://en.wikipedia.org/wiki/Wiener_process" target="_blank">Wiener process</a>
+		  	</li>
+            <li style="margin-top:0.1em;margin-right:0.5em;margin-left:-1.8em" class="tooltip-wider">
+				<a href="http://en.wikipedia.org/wiki/Wiener_process" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Click-and-drag on canvas to set the drift. Simple click for a random walk. Use right buttons to turn the widget on/off"><small class="glyphicon glyphicon-info-sign"></small></a>
 		  	</li>
 			<li>			
-              <div class="btn-group" style="margin-top:0.8em">
+              <div class="btn-group wienner_on" style="margin-top:0.8em;display:none">
                 <a href="#" class="btn btn-xs btn-danger disabled" style="top:1.5px; border-bottom-width:2.5px; box-shadow: 0 0 10px #FF0000">OFF</a>
-                <a href="#" class="btn btn-xs btn-primary active">ON</a>
+                <a href="#" class="btn btn-xs btn-primary active" onClick="$('.wienner_on').hide();$('.wienner').show();return false">ON</a>
               </div>
 		  	</li>
-			<li> . </li>
 			<li>			
-              <div class="btn-group" style="margin-top:0.8em">
-                <a href="#" class="btn btn-xs btn-danger active">OFF</a>
+              <div class="btn-group wienner" style="margin-top:0.8em" >
+                <a href="#" class="btn btn-xs btn-danger active" onClick="$('.wienner').hide();$('.wienner_on').show();return false">OFF</a>
                 <a href="#" class="btn btn-xs btn-primary disabled" style="top:1.5px; border-bottom-width:2.5px; box-shadow: 0 0 10px #0099FF">ON</a>
               </div>
 		  	</li>
           </ul>
         </div>
       </div>
-    </div>
-
-
-<style>
-/*
-body > .blur{
-	-webkit-filter: blur(5px);
-	  -moz-filter: blur(5px);
-	  -o-filter: blur(5px);
-	  -ms-filter: blur(5px);
-	  filter: blur(5px);
-}
-*/
-</style>
-
+    </div> 
 
 	<div class="container" style="padding-top:100px">		
 		<div class="row">
 			<span class="col-lg-2"></span>
 			<div class="col-lg-8" class="blur">
-				<div class="jumbotron" style="background:rgba(240, 240, 240, 0.5);">
-  
-  <div id="contact">
- 	<h2>SÁNCHEZ CASTILLO, Manuel</h2>
- 	<p>Universiy of Cambridge</p>
- 	<p>Cambridge Institute for Medical Research</p>
- 	<p>Haematopoietic Stem Cell Laboratory</p>
- 	<p>Cambridge, CB2 0XY</p>
- 	<p>United Kingdom</p>
- 	<p><a href="#" onClick="location.href='ma' + 'ilto' + ':ms21' + '88@' + 'cam.' + 'ac.' + 'uk';return false;">&#109;s2188&#64;cam&#46;ac&#46;uk</a></p>
- 	<div id="frame_module" style="position:relative;float:right"><img src="img/frame_module.png" alt="Frame Module"></div>
- 	<div id="frame_phase" style="position:relative;float:right;right:0px;top:0px;"><img src="img/frame_phase.png" alt="Frame Phase"></div>
-  </div> 
+				<div class="jumbotron" style="background:rgba(240, 240, 240, 0.5);">  
+					<div id="contact">
+						<h2>SÁNCHEZ CASTILLO, Manuel</h2>
+						<p>University of Cambridge</p>
+						<p>Cambridge Institute for Medical Research</p>
+						<p>Haematopoietic Stem Cell Laboratory</p>
+						<p>Cambridge, CB2 0XY</p>
+						<p>United Kingdom</p>
+						<p><a href="#" onClick="location.href='ma' + 'ilto' + ':ms21' + '88@' + 'cam.' + 'ac.' + 'uk';return false;">&#109;s2188&#64;cam&#46;ac&#46;uk</a></p>
+						<div id="frame" onMouseOver="$('#phase').css( 'zIndex','1' )" onMouseOut="$('#phase').css( 'zIndex','3' )">
+							<img id="module" src="img/frame_module.png" alt="Frame Module" style="margin-left:1em;z-index:2">
+							<img id="phase"  src="img/frame_phase.png" alt="Frame Phase"   style="margin-top:-1em;z-index:3">
+						</div>
+					</div> 
 				</div>
 			</div>
 		</div>
 	</div>
+	
+    <div class="container">
+		<div class="alert alert-dismissable alert-warning">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<h4>Notice!</h4>
+			<p>This website is under construction. In the meanwhile, you are invited to visit <a href="http://www.ugr.es/~mscastillo" class="alert-link">my academic page</a> hosted at the University of Granada.</p>
+		</div>
+    </div>
 
+    <div class="container">
+		
+		
+		<a id="welcome"></a>
+		<h1 class="page-header">Welcome</h1>
+		
+		<p>Hi, this is the academic-research website of Manuel Sánchez Castillo.</p>
+			
+		<h2>About</h2>
+		
+		<p>I was born in <a href="http://en.wikipedia.org/wiki/La_L%C3%ADnea_de_la_Concepci%C3%B3n">La Línea de la Concepción</a> (<a href="http://en.wikipedia.org/wiki/Spain">Spain</a>) in <a href="http://elpais.com/tag/fecha/19810730/">July, 30th 1981</a>.</p>
+		<p>I moved to <a href="http://en.wikipedia.org/wiki/Granada">Granada</a> when I was 18 y.o. to start my universitary studies in Physics.</p>
+		<p>I got my PhD degree in the <a href="http://doctorados.ugr.es/fisica_ciencias_espacio/">Physics and Space Sciences program</a> at the <a href="http://www.ugr.es/">University of Granada</a> on 2012.</p>
+		<p>Currently, I hold a postdoctoral position at the <a href="http://hscl.cimr.cam.ac.uk/">Haematopoietic Stem Cell Laboratory</a> in the <a href="http://www.cam.ac.uk/">University of Cambridge</a>.</p>
+			
+		<h2>Contact</h2>
+			
+		<h2>Keywords</h2>
+		
+		<p>A summary of my research interests, in a few words.</p>
+		
+		<p><span class="label label-default">Signal Processing</span> <span class="label label-default">Pattern Recognition</span> <span class="label label-default">Machine Learning</span> <span class="label label-default">Statistical Inference</span> <span class="label label-default">Bayesian Methods</span></p>
+		<p><span class="label label-primary">Bioinformatics</span> <span class="label label-primary">NGS data analysis</span> <span class="label label-primary">Regulatory Networks</span> <span class="label label-primary">Blood Stem cells</span> <span class="label label-primary">Breast Cancer</span></p>
+		<p><span class="label label-success">Geoscience</span> <span class="label label-success">Remote Sensing</span> <span class="label label-success">Satellite Imagery</span> <span class="label label-success">Multi/Hyper-spectral Images</span></p>
 
-    <div class="container">	
+		<h2>Recent publications</h2>
+			
+			
+		<a id="education"></a>
+		<h1 class="page-header">Education</h1>
+		
+			<h2>Background</h2>
+			<h2>PhD</h2>
+		<a id="research"></a>
+		<h1 class="page-header">Research</h1>
+			<h2>Work and projects</h2>
+			<h2>Internships</h2>
+		<a id="publications"></a>
+		<h1 class="page-header">Publications</h1>
+			<h2>Papers</h2>
+			<h2>Conferences</h2>
+			<h3>International conferences</h3>
+			<h3>National (Spain) conferences</h3>
+			<h2>Others</h2>
     </div>
 
 
+
+
+	<script type="text/javascript">$('[data-toggle="tooltip"]').tooltip();</script>
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../assets/js/bootswatch.js"></script>
+    
   </body>
 </html>
-
