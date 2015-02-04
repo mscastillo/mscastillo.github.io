@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 
 /* RSS BLOCKS */
@@ -116,3 +117,123 @@ line-height:2em ;
 
 div#rss_scopus div.rss-box li br {
 }
+=======
+
+
+/* RSS BLOCKS */
+
+
+span#rss-blocks {
+font-size:10px ;
+}
+
+span#rss-blocks > div {
+display: block ;
+padding-bottom:25px ;
+background:url(../img/linea.jpg) bottom left no-repeat 
+}
+
+span#rss_title {
+display:block ; /**/
+width:100%-25px ;
+border:none ;
+font-size:2em ;
+}
+
+
+span#rss-blocks div p.rss-title {
+display:block ;
+width:100% - 20px ;
+margin:0px ;
+margin-left:10px ;
+line-height:3em ;
+background:url(../img/corner.gif) center right no-repeat #006699 ;
+margin-left:-25px 
+}
+
+
+span#rss-blocks div p.rss-title span#title {
+display:block ;
+width:100% - 20px ;
+font-size:2em ;
+color:#FFFFFF ;
+border:none ;
+padding-left:1em ;
+margin-top:1em ;
+}
+
+span#rss-blocks div#fold {
+display:block ;
+float:left ;
+width:10px ;
+height:10px ;
+background:url(../img/fold.gif) top left no-repeat ;
+margin-left:-25px;
+}
+
+span#rss-blocks div ul.rss-items {
+display:block ;
+width:100% - 25px ;
+border:none ;
+list-style:none ;
+margin-left:-25px;
+}
+
+span#rss-blocks div ul.rss-items li {
+display:block ;
+width:100%-25px ;
+list-style:none ;
+padding-bottom:1em ;
+margin-top:1em ;
+}
+
+span#rss-blocks div  ul.rss-items li * {
+}
+
+span#rss-blocks div  ul.rss-items li br {
+display:none ;
+}
+
+span#rss-blocks div  ul.rss-items li a.rss-item {
+font-size:1.5em ;
+}
+
+span#rss-blocks div  ul.rss-items li span.rss-item-auth {
+display:block ;
+}
+
+span#rss-blocks div ul.rss-items li span.rss-date {
+}
+
+
+/* RSS SCOPUS */ 
+
+
+div#rss_scopus {
+font-size:1em ;
+}
+
+div#rss_scopus div.rss-box p {
+display:none ;
+}
+
+div#rss_scopus div.rss-box ul {
+list-style:none ;
+}
+
+div#rss_scopus div.rss-box li {
+margin-bottom:2em ;
+font-size:1em ;
+border-left:solid 1px #9EBBC4 ;
+padding-left:1em ;
+padding-bottom:0.5em ;
+}
+
+div#rss_scopus div.rss-box li a {
+font-size:1.5em ;
+line-height:2em ;
+}
+
+div#rss_scopus div.rss-box li br {
+}
+>>>>>>> Stashed changes
