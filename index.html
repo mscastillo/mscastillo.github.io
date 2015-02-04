@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.css">
     <link rel="stylesheet" href="stylesheets/estilo.css">
+    <link rel="stylesheet" href="stylesheets/rss.css">
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -83,7 +85,7 @@
 				<a href="http://en.wikipedia.org/wiki/Wiener_process" target="_blank">Wiener process</a>
 		  	</li>
             <li style="margin-top:0.1em;margin-right:0.5em;margin-left:-1.8em" class="tooltip-wider">
-				<a href="http://en.wikipedia.org/wiki/Wiener_process" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Click-and-drag on canvas to set the drift. Simple click for a random walk. Use right buttons to turn the widget on/off"><small class="glyphicon glyphicon-info-sign"></small></a>
+				<a href="http://en.wikipedia.org/wiki/Wiener_process" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Click-and-drag on canvas to set the drift. Simple click for a random walk. Use right buttons to turn it on/off"><small class="glyphicon glyphicon-info-sign"></small></a>
 		  	</li>
 			<li>			
               <div class="btn-group wienner_on" style="margin-top:0.8em;display:none">
@@ -109,6 +111,10 @@
 				<div class="jumbotron" style="background:rgba(240, 240, 240, 0.5);">  
 					<div id="contact">
 						<h2>SÁNCHEZ CASTILLO, Manuel</h2>
+						<p style="font-size:1.5em"><b>PhD in Physics</b></p>
+						<p><b>Research interests</b></p>
+						<p><span class="label label-default">Machine Learning</span> <span class="label label-info">Bioinformatics</span> <span class="label label-primary">Computational Biology</span> <span class="label label-success">Geoscience</span></p>
+						<p><b>Contact</b></p>
 						<p>University of Cambridge</p>
 						<p>Cambridge Institute for Medical Research</p>
 						<p>Haematopoietic Stem Cell Laboratory</p>
@@ -117,8 +123,10 @@
 						<p><a href="#" onClick="location.href='ma' + 'ilto' + ':ms21' + '88@' + 'cam.' + 'ac.' + 'uk';return false;">&#109;s2188&#64;cam&#46;ac&#46;uk</a></p>
 						<div id="frame" onMouseOver="$('#phase').css( 'zIndex','1' )" onMouseOut="$('#phase').css( 'zIndex','3' )">
 							<img id="module" src="img/frame_module.png" alt="Frame Module" style="margin-left:1em;z-index:2">
-							<img id="phase"  src="img/frame_phase.png" alt="Frame Phase"   style="margin-top:-1em;z-index:3">
+							<img id="phase"  src="img/frame_module.png" alt="Frame Phase"   style="margin-top:-1em;z-index:3">
 						</div>
+						<p><b>Aliases</b></p>
+						<p>Sanchez-Castillo, M. ; Sánchez-Castillo, M. ; Sanchez Castillo, M ; Sánchez Castillo, M</p>
 					</div> 
 				</div>
 			</div>
@@ -155,11 +163,33 @@
 		<p>A summary of my research interests, in few words.</p>
 		
 		<p class="keywords">
-			<span class="label label-default">Signal Processing</span> <span class="label label-default">Pattern Recognition</span> <span class="label label-default">Machine Learning</span> <span class="label label-default">Statistical Inference</span> <span class="label label-default">Bayesian Methods</span>
-			<span class="label label-primary">Bioinformatics</span> <span class="label label-primary">NGS data analysis</span> <span class="label label-primary">Regulatory Networks</span> <span class="label label-primary">Blood Stem cells</span> <span class="label label-primary">Breast Cancer</span>
+			<span class="label label-default">Machine Learning</span> <span class="label label-default">Signal Processing</span> <span class="label label-default">Pattern Recognition</span> <span class="label label-default">Statistical Inference</span> <span class="label label-default">Bayesian Methods</span>
+			<span class="label label-info">Bioinformatics</span> <span class="label label-info">Microarray data analysis</span> <span class="label label-info">High-throughput data analysis</span> <span class="label label-info">NGS data analysis</span> <span class="label label-info">Regulatory Networks</span>
+			<span class="label label-primary">Computational Biology</span> <span class="label label-primary">Blood Stem cells</span> <span class="label label-primary">Leukaemia</span> <span class="label label-primary">Breast Cancer</span>
 			<span class="label label-success">Geoscience</span> <span class="label label-success">Remote Sensing</span> <span class="label label-success">Satellite Imagery</span> <span class="label label-success">Multi/Hyper-spectral Image Analysis</span>
 		</p>
 
+
+		<h2>Hot papers</h2>
+		
+			<span class="row" id="rss-blocks">
+			
+			<div class="col-md-4" id="rss">
+			    <p class="rss-title"><span id="title">Bioinformatics</span><div id="fold"></div></p>
+				<script language="JavaScript" src="http://www.feedroll.com/rssviewer/feed2js.php?src=http%3A%2F%2Fbioinformatics.oxfordjournals.org%2Frss%2Fcurrent.xml&num=1&utf=y"  charset="UTF-8" type="text/javascript"></script>
+			<span></span></div>
+			<div class="col-md-4" id="rss">
+			    <p class="rss-title"><span id="title">BMC Bioinformatics</span><div id="fold"></div></p>
+				<script language="JavaScript" src="http://www.feedroll.com/rssviewer/feed2js.php?src=http%3A%2F%2Fwww.biomedcentral.com%2Fbmcbioinformatics%2Fmostviewed%2F30days%2Frss&num=1&utf=y"  charset="UTF-8" type="text/javascript"></script>
+			<span></span></div>
+			<div class="col-md-4" id="rss">
+			    <p class="rss-title"><span id="title">PLOS CompBio</span><div id="fold"></div></p>
+				<script language="JavaScript" src="http://www.feedroll.com/rssviewer/feed2js.php?src=http%3A%2F%2Ffeeds.plos.org%2Fploscompbiol%2FNewArticles&num=1&utf=y"  charset="UTF-8" type="text/javascript"></script>
+			<span></span></div>
+			
+			</span>
+		
+		
 		<h2>Latest publications</h2>
 			
 			
@@ -191,4 +221,3 @@
     
   </body>
 </html>
-
