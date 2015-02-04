@@ -5,7 +5,7 @@
 
 
 span#rss-blocks {
-font-size:10px ;
+font-size:12px ;
 }
 
 span#rss-blocks > div {
@@ -76,7 +76,7 @@ display:none ;
 }
 
 span#rss-blocks div  ul.rss-items li a.rss-item {
-font-size:1.5em ;
+font-size:1em ;
 }
 
 span#rss-blocks div  ul.rss-items li span.rss-item-auth {
