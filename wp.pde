@@ -3,8 +3,8 @@ randomSeed(114) ; // seed initialization, comment it for actual randomness
 float canvas_size_x = document.body.clientWidth , canvas_size_y = 50 ; // window.innerHeight ;
 float fps = 14.0 ;
 float x = canvas_size_x*random(-0.5,0.5) , y = canvas_size_y*random(-0.5,0.5) ;
-float start_x = x , start_y = y ;
-float drift_x = x - abs(x)*(canvas_size_x*0.1)/x , drift_y = y - abs(y)*(canvas_size_y*0.1)/y ;
+float start_x = constrain(x,-0.5*canvas_size_x,0.5*canvas_size_x) , start_y = constrain(y,-0.5*canvas_size_y,0.5*canvas_size_y) ;
+float drift_x = constrain(x - abs(x)*(canvas_size_x*0.1)/x,-0.5*canvas_size_x,0.5*canvas_size_x) , drift_y = constrain(y - abs(y)*(canvas_size_y*0.1)/y,-0.5*canvas_size_y,0.5*canvas_size_y) ;
 float d_x = drift_x-start_x , d_y = drift_y-start_y ;
 float mu_x = mu_x = d_x/sqrt(d_x*d_x+d_y*d_y) , mu_y = d_y/sqrt(d_x*d_x+d_y*d_y) ;
 boolean draw_particle = true ;
@@ -137,15 +137,15 @@ float randn() {
 
 void mousePressed() {
  draw_particle = false ;
- start_x = mouseX - 0.5*width ; 
- start_y = mouseY - 0.5*height ;
+ start_x = mouseX - 0.5*width ;
+ start_y = mouseY - floor(mouseY/height)*height  - 0.5*height ;
  drift_x = start_x ;
  drift_y = start_y ;
 }
 
 void mouseReleased() {
  drift_x = mouseX - 0.5*width ;
- drift_y = mouseY - 0.5*height ;
+ drift_y = mouseY - floor(mouseY/height)*height - 0.5*height ;
  d_x = drift_x-start_x ;
  d_y = drift_y-start_y ;
  if( d_x == 0 ){ mu_x = 0 ; }else{ mu_x = d_x/sqrt(d_x*d_x+d_y*d_y) ; } ;
@@ -163,5 +163,5 @@ void mouseReleased() {
 void mouseDragged() {
  draw_particle = false ;
  drift_x = mouseX - 0.5*width ;
- drift_y = mouseY - 0.5*height ;
+ drift_y = mouseY - floor(mouseY/height)*height - 0.5*height ;
 }
