@@ -81,6 +81,9 @@
                     <li><a href="https://bitbucket.org/mscastillo" target="_blank">BitBucket</a></li>
             	</ul>
 			</li>
+            <li>
+              <a href="#links">Links</a>
+            </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li>
@@ -127,7 +130,7 @@
 						
 						<div id="frame" onMouseOver="$('#phase').css( 'zIndex','1' )" onMouseOut="$('#phase').css( 'zIndex','3' )">
 							<img id="module" src="img/frame_module.png" alt="Frame Module" style="margin-left:1em;z-index:2">
-							<img id="phase"  src="img/frame_phase.png" alt="Frame Phase"   style="margin-top:-1em;z-index:3">
+							<img id="phase"  src="img/frame_module.png" alt="Frame Phase"   style="margin-top:-1em;z-index:3">
 						</div>
 					</div> 
 				</div>
@@ -192,6 +195,26 @@
   </div> 		
 			
 			<h2>Latest publications</h2>
+			
+	<div id="rss_scopus">
+	<script language="JavaScript" charset="UTF-8" type="text/javascript" src="http://www.feedroll.com/rssviewer/feed2js.php?src=http%3A%2F%2Fsyndic8.scopus.com%2FgetMessage%3FregistrationId%3DEECHFHKHFGCQIEDIGEDKEIDIELDLFJCOEGKLKIGJLE&chan=y&num=2&desc=1&utf=y">
+	
+	</script>
+	<!-- <script src="http://syndic8.scopus.com/getMessage?registrationId=BACGCDKGCCCPFADHDADJBEDIBJGNFEKOIHKLIBCIHU"></script> -->
+	</div>
+	
+	<script>
+	var $foo = $('#rss_scopus'), fooHtml = $foo.html() ;
+    fooHtml = fooHtml.replace(/Author\(s\):/g, '') ;
+    fooHtml = fooHtml.replace(/\|/g, ' and ') ;
+    fooHtml = fooHtml.replace(/Publication year: /g, ' (') ;
+    fooHtml = fooHtml.replace(/Journal \/ Book title:/g, ')<br/><em> ') ;
+    fooHtml = fooHtml.replace(/Access all results for your search in Scopus/g, '</em>') ;
+    $foo.html(fooHtml) ;
+	</script>
+	
+	<p>... click <a href="research.html" title="Go to Research">here</a> to see my complete scientific record.</p>
+
 		
 			<h2>Aliases</h2>
 			
@@ -227,41 +250,26 @@
 		
 		
 		
-		<div class="container">
-		
-			<a id="links"></a>
-			<h1 class="page-header">Quick links</h1>
-			
-			<h2>On-line resources</h2>		
-			<dl class="dl-horizontal">
-				<dt><a href="http://codex.stemcells.cam.ac.uk/" target="_blank">CODEX</a></dt>
-				<dd>A NGS experiment database for the haematopoietic and embryonic stem cell communities</dd>
-			</dl>
-			
-			<h2>Training and learning</h2>		
-			<dl class="dl-horizontal">
-				<dt><a href="http://www.mygoblet.org/training-portal" target="_blank">GOBLET's Training portal</a></dt>
-				<dd>Bioinformatics courses and learning material at GOBLET</dd>
-				<dt><a href="http://en.wikibooks.org/wiki/Next_Generation_Sequencing_%28NGS%29" target="_blank">NGS wikibook</a></dt>
-				<dd>A collaborative wikibook on NGS</dd>
-				<dt><a href="https://www.coursera.org/specialization/systemsbiology/6?utm_medium=courseDescripTop" target="_blank">Systems Biology</a></dt>
-				<dd>COURSERA's Systems Biology courses from the Icahn School of Medicine at Mount Sinai</dd>
-			</dl>
-			
-			<h2>Institutions</h2>		
-			<dl class="dl-horizontal">
-				<dt><a href="http://www.inab.org/" target="_blank">INAB</a></dt>
-				<dd>Spanish's National Institute of Bioinformatics</dd>
-				<dt><a href="http://www.iscb.org/" target="_blank">ISCB</a></dt>
-				<dd>International Society for Computational Biology</dd>
-			</dl>
-			
+<div class="container">
+	
 			
 		<a id="education"></a>
 		<h1 class="page-header">Education</h1>
 		
 			<h2>Background</h2>
+			
+<div class="list-group">
+  <span class="list-group-item">
+    <h4 class="list-group-item-heading">List group item heading</h4>
+    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+  </span>
+  <span class="list-group-item">
+    <h4 class="list-group-item-heading">List group item heading</h4>
+    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+  </span>
+</div>
 			<h2>PhD</h2>
+			
 			
 		<a id="research"></a>
 		<h1 class="page-header">Research</h1>
@@ -287,7 +295,36 @@
 			<h3>International conferences</h3>
 			<h3>National conferences (Spain)</h3>
 			<h2>Others</h2>
-    </div>
+			
+			
+			<a id="links"></a>
+			<h1 class="page-header">Links</h1>
+			
+			<h2>On-line resources</h2>		
+			<dl class="dl-horizontal">
+				<dt><a href="http://codex.stemcells.cam.ac.uk/" target="_blank">CODEX</a></dt>
+				<dd>A NGS experiment database for the haematopoietic and embryonic stem cell communities</dd>
+			</dl>
+			
+			<h2>Training and learning</h2>		
+			<dl class="dl-horizontal">
+				<dt><a href="http://www.mygoblet.org/training-portal" target="_blank">GOBLET's Training portal</a></dt>
+				<dd>Bioinformatics courses and learning material at GOBLET</dd>
+				<dt><a href="http://en.wikibooks.org/wiki/Next_Generation_Sequencing_%28NGS%29" target="_blank">NGS wikibook</a></dt>
+				<dd>A collaborative wikibook on NGS</dd>
+				<dt><a href="https://www.coursera.org/specialization/systemsbiology/6?utm_medium=courseDescripTop" target="_blank">Systems Biology</a></dt>
+				<dd>COURSERA's Systems Biology courses from the Icahn School of Medicine at Mount Sinai</dd>
+			</dl>
+			
+			<h2>Institutions</h2>		
+			<dl class="dl-horizontal">
+				<dt><a href="http://www.inab.org/" target="_blank">INAB</a></dt>
+				<dd>Spanish's National Institute of Bioinformatics</dd>
+				<dt><a href="http://www.iscb.org/" target="_blank">ISCB</a></dt>
+				<dd>International Society for Computational Biology</dd>
+			</dl>		
+			
+</div>
 
 
 
