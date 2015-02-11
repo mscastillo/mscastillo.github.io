@@ -97,30 +97,33 @@ span#rss-blocks div ul.rss-items li span.rss-date {
 
 
 div#rss_scopus {
-font-size:1em ;
+margin-top:2em ;
 }
 
 div#rss_scopus div.rss-box p {
 display:none ;
+margin:0px ;
+padding:0px ;
 }
 
-div#rss_scopus div.rss-box ul {
+div#rss_scopus div.rss-box ul.rss-items {
 list-style:none ;
+margin:0em ;
+padding:0em ;
 }
 
-
-div#rss_scopus div.rss-box li {
+div#rss_scopus div.rss-box li.rss-item {
 margin-bottom:2em ;
 font-size:1em ;
-border-left:solid 1px #9EBBC4 ;
+border-left:solid 2px #9EBBC4 ;
 padding-left:1em ;
 padding-bottom:0.5em ;
 }
 
-div#rss_scopus div.rss-box li a {
+div#rss_scopus div.rss-box li.rss-item a {
 font-size:1.5em ;
-line-height:2em ;
+line-height:1em ;
 }
 
-div#rss_scopus div.rss-box li br {
+div#rss_scopus div.rss-box li.rss-item br {
 }
