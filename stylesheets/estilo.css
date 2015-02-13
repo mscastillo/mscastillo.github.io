@@ -60,3 +60,17 @@ line-height:1.75em
 p.keywords span {
 margin-right:0.25em ;
 }
+
+ul.university {
+list-style:none ;
+margin:0em ;
+padding:0em ;
+}
+
+ul.university li.title {
+font-size:1.5em ;
+line-height:1.5em ;
+}
+
+ul.university li a {
+}
