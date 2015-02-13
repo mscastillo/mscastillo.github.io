@@ -2,337 +2,412 @@
 
 <!DOCTYPE html>
 
+
 <html lang="en">
 
-  <head>
+
+ <head>
 	  
-    <meta charset="utf-8">
-    <title>SANCHEZ CASTILLO, Manuel</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap-3.2.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
-    <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.css">
-    <link rel="stylesheet" href="stylesheets/estilo.css">
-    <link rel="stylesheet" href="stylesheets/rss.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
-	<script type="text/javascript" src="javascript.js"></script>
-	<script type="text/javascript" src="processing.js"></script>
-	
-	
-	
-  </head>
+  <title>SANCHEZ CASTILLO, Manuel</title>
   
-  <body>
+  <meta charset="utf-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="bootstrap-3.2.0-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.css">
+  <link rel="stylesheet" href="stylesheets/estilo.css">
+  <link rel="stylesheet" href="stylesheets/rss.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+  <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
+  <script type="text/javascript" src="javascript.js"></script>
+  <script type="text/javascript" src="processing.js"></script>
+  
+ </head>
 
-	
-  	<div class="navbar navbar-default navbar-fixed-top" id="nav-top">		
-  	
-  	  <canvas data-processing-sources="wp.pde" style="position:absolute;float:left" class="wienner"></canvas>
-  		
-      <div class="container">
-        <div class="navbar-header" style="color:#FFFFFF">
-          <a href="#" class="navbar-brand"><i class="glyphicon glyphicon-home"></i></a>
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse" id="navbar-main">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="#welcome">Welcome</a>
-            </li>
-            <li>
-              <a href="#education">Education</a>
-            </li>
-            <li>
-              <a href="#research">Research</a>
-            </li>
-            <li>
-              <a href="#publications">Publications</a>
-            </li>
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles<b class="caret"></b></a>
-            	<ul class="dropdown-menu">
-                 	<li class="dropdown-header"><span class="pull-left" style="line-height:2em;font-weight:bold">Research</span>  
-						<span class="fa-stack pull-right">
-							<i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-flask fa-stack-1x fa-inverse"></i>
-						</span>
-					</li>
-                    <li><a href="http://www.scopus.com/authid/detail.url?authorId=36740065700" target="_blank">Scopus</a></li>
-                    <li><a href="http://orcid.org/0000-0002-4204-391X" target="_blank">ORCiD</a></li>
-                    <li><a href="http://scholar.google.es/citations?user=qulgu8EAAAAJ" target="_blank">Google Scholar</a></li>
-                    <li><a href="http://lnkd.in/Yy3JD7" target="_blank">LinkedIn</a></li>
-                    <li><a href="#">Research Gate</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header"><span class="pull-left" style="line-height:2em;font-weight:bold">Development</span> 
-						<span class="fa-stack pull-right">
-							<i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse"></i>
-						</span>
-					</li>
-                    <li><a href="https://github.com/mscastillo" target="_blank">Github</a></li>
-                    <li><a href="https://bitbucket.org/mscastillo" target="_blank">BitBucket</a></li>
-            	</ul>
-			</li>
-            <li>
-              <a href="#links">Links</a>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-				<a href="http://en.wikipedia.org/wiki/Wiener_process" target="_blank">Wiener process</a>
-		  	</li>
-            <li style="margin-top:0.1em;margin-right:0.5em;margin-left:-1.8em" class="tooltip-wider">
-				<a href="http://en.wikipedia.org/wiki/Wiener_process" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Click-and-drag on canvas to set the drift. Simple click for a random walk. Use right buttons to turn it on/off"><small class="glyphicon glyphicon-info-sign"></small></a>
-		  	</li>
-			<li>			
-              <div class="btn-group wienner_on" style="margin-top:0.8em;display:none">
-                <a href="#" class="btn btn-xs btn-danger disabled" style="top:1.5px; border-bottom-width:2.5px; box-shadow: 0 0 10px #FF0000">OFF</a>
-                <a href="#" class="btn btn-xs btn-primary active" onClick="$('.wienner_on').hide();$('.wienner').show();return false">ON</a>
-              </div>
-		  	</li>
-			<li>			
-              <div class="btn-group wienner" style="margin-top:0.8em" >
-                <a href="#" class="btn btn-xs btn-danger active" onClick="$('.wienner').hide();$('.wienner_on').show();return false">OFF</a>
-                <a href="#" class="btn btn-xs btn-primary disabled" style="top:1.5px; border-bottom-width:2.5px; box-shadow: 0 0 10px #0099FF">ON</a>
-              </div>
-		  	</li>
-          </ul>
-        </div>
-      </div>
-    </div> 
 
-	<a id="top"></a>
-	<div class="container" style="padding-top:100px">		
-		<div class="row">
-			<span class="col-lg-2"></span>
-			<div class="col-lg-8" class="blur">
-				<div class="jumbotron" style="background:rgba(240, 240, 240, 0.5);">  
-					<div id="contact">
-						<h2>SÁNCHEZ CASTILLO, Manuel</h2>
-						<p style="font-size:1.5em"><b>PhD in Physics</b></p>
-						<p><b>Contact</b></p>
-						<p>University of Cambridge</p>
-						<p>Cambridge Institute for Medical Research</p>
-						<p>Haematopoietic Stem Cell Laboratory</p>
-						<p>Cambridge, CB2 0XY</p>
-						<p>United Kingdom</p>
-						<p><a href="#" onClick="location.href='ma' + 'ilto' + ':ms21' + '88@' + 'cam.' + 'ac.' + 'uk';return false;">&#109;s2188&#64;cam&#46;ac&#46;uk</a></p>
-						<p><b>Research interests</b></p>
-						<p><span class="label label-default">Machine Learning</span> <span class="label label-info">Bioinformatics</span> <span class="label label-primary">Computational Biology</span> <span class="label label-success">Geoscience</span></p>
-						
-						<div id="frame" onMouseOver="$('#phase').css( 'zIndex','1' )" onMouseOut="$('#phase').css( 'zIndex','3' )">
-							<img id="module" src="img/frame_module.png" alt="Frame Module" style="margin-left:1em;z-index:2">
-							<img id="phase"  src="img/frame_module.png" alt="Frame Phase"   style="margin-top:-1em;z-index:3">
-						</div>
-					</div> 
-				</div>
-			</div>
-		</div>
-	</div>
-	
+ <body>
+	 
+	 
+  <div class="navbar navbar-default navbar-fixed-top" id="nav-top">
+	  
+   <canvas data-processing-sources="wp.pde" style="position:absolute;float:left" class="wienner"></canvas>
+   
     <div class="container">
-		<div class="alert alert-dismissable alert-warning">
-			<button type="button" class="close" data-dismiss="alert">&times;</button>
-			<h4>Notice!</h4>
-			<p>This website is under construction. In the meanwhile, you are invited to visit <a href="http://www.ugr.es/~mscastillo" class="alert-link">my academic page</a> hosted at the University of Granada.</p>
-		</div>
+		
+     <div class="navbar-header" style="color:#FFFFFF">
+      <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-home"></span></a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
     </div>
+    
+    <div class="navbar-collapse collapse" id="navbar-main">
+		
+      <ul class="nav navbar-nav">
+      <li>
+        <a href="#welcome">Welcome</a>
+      </li>
+      <li>
+        <a href="#education">Education</a>
+      </li>
+      <li>
+        <a href="#research">Research</a>
+      </li>
+      <li>
+        <a href="#publications">Publications</a>
+      </li>
+      <li class="dropdown">
+       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles<b class="caret"></b></a>
+      	<ul class="dropdown-menu">
+         <li class="dropdown-header"><span class="pull-left" style="line-height:2em;font-weight:bold">Research</span>  
+          <span class="fa-stack pull-right"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-flask fa-stack-1x fa-inverse"></i></span>
+		 </li>
+         <li><a href="http://www.scopus.com/authid/detail.url?authorId=36740065700" target="_blank">Scopus</a></li>
+         <li><a href="http://orcid.org/0000-0002-4204-391X" target="_blank">ORCiD</a></li>
+         <li><a href="http://scholar.google.es/citations?user=qulgu8EAAAAJ" target="_blank">Google Scholar</a></li>
+         <li><a href="http://lnkd.in/Yy3JD7" target="_blank">LinkedIn</a></li>
+         <li><a href="#">Research Gate</a></li>
+         <li class="divider"></li>
+         <li class="dropdown-header"><span class="pull-left" style="line-height:2em;font-weight:bold">Development</span> 
+          <span class="fa-stack pull-right"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse"></i></span>
+         </li>
+         <li><a href="https://github.com/mscastillo" target="_blank">Github</a></li>
+         <li><a href="https://bitbucket.org/mscastillo" target="_blank">BitBucket</a></li>
+      	</ul>
+       </li>
+      <li>
+        <a href="#links">Links</a>
+      </li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+       <li>
+		<a href="http://en.wikipedia.org/wiki/Wiener_process" target="_blank">Wiener process</a>
+	   </li>
+       <li style="margin-top:0.1em;margin-right:0.5em;margin-left:-1.8em" class="tooltip-wider">
+		<a href="http://en.wikipedia.org/wiki/Wiener_process" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Click-and-drag on canvas to set the drift. Simple click for a random walk. Use right buttons to turn it on/off"><small class="glyphicon glyphicon-info-sign"></small></a>
+	   </li>
+       <li>			
+        <div class="btn-group wienner_on" style="margin-top:0.8em;display:none">
+         <a href="#" class="btn btn-xs btn-danger disabled" style="top:1.5px; border-bottom-width:2.5px; box-shadow: 0 0 10px #FF0000">OFF</a>
+         <a href="#" class="btn btn-xs btn-primary active" onClick="$('.wienner_on').hide();$('.wienner').show();return false">ON</a>
+        </div>
+       </li>
+       <li>			
+        <div class="btn-group wienner" style="margin-top:0.8em" >
+         <a href="#" class="btn btn-xs btn-danger active" onClick="$('.wienner').hide();$('.wienner_on').show();return false">OFF</a>
+         <a href="#" class="btn btn-xs btn-primary disabled" style="top:1.5px; border-bottom-width:2.5px; box-shadow: 0 0 10px #0099FF">ON</a>
+        </div>
+       </li>
+      </ul>
+      
+    </div> <!-- #navbar-main -->
+    
+   </div> <!-- .container -->	
+   
+  </div> <!-- #navbar-top -->	
 
-		
-		<div class="container">
-		
-		<a id="welcome"></a>
-		
-		<h1 class="page-header">Welcome</h1>
-		
-			
-			<div class="col-md-9">
-		
-			<p>Hi, this is the academic-research website of Manuel Sánchez Castillo.</p>
-						
-			<h2>About me...</h2>
-		
-			<p>I was born in <a href="http://en.wikipedia.org/wiki/La_L%C3%ADnea_de_la_Concepci%C3%B3n">La Línea de la Concepción</a> (<a href="http://en.wikipedia.org/wiki/Spain">Spain</a>) in <a href="http://elpais.com/tag/fecha/19810730/">July, 30th 1981</a>.</p>
-			<p>I moved to <a href="http://en.wikipedia.org/wiki/Granada">Granada</a> when I was 18 y.o. to start my universitary studies in Physics.</p>
-			<p>I got my PhD degree in the <a href="http://doctorados.ugr.es/fisica_ciencias_espacio/">Physics and Space Sciences program</a> at the <a href="http://www.ugr.es/">University of Granada</a> on 2012.</p>
-			<p>Currently, I hold a postdoctoral position in the <a href="http://hscl.cimr.cam.ac.uk/">Haematopoietic Stem Cell Laboratory</a> of the <a href="http://www.cam.ac.uk/">University of Cambridge</a>.</p>
-					
-			<h2>Previous affiliations</h2>
-			
-			<p>Check <a href="#top">here</a> my current contact details at the University of Cambridge. Next are listed my previous affilitions.</p>
-			
-  <div class="row">
+
+  <a id="top"></a>
+  
+  
+  <div class="container" style="padding-top:100px">
+   <div class="row">
+    <span class="col-lg-2"></span>    
+	<div class="col-lg-8" class="blur">		 
+	 <div class="jumbotron" style="background:rgba(240, 240, 240, 0.5);" id="contact">  
+	  <h2>SÁNCHEZ CASTILLO, Manuel</h2>
+      <p style="font-size:1.5em"><b>PhD in Physics</b></p>
+      <p><b>Contact</b></p>
+      <p>University of Cambridge</p>
+      <p>Haematopoietic Stem Cell Laboratory</p>
+      <p>CB2 0XY, Cambridge</p>
+      <p>United Kingdom</p>
+      <p><a href="#" onClick="location.href='ma' + 'ilto' + ':ms21' + '88@' + 'cam.' + 'ac.' + 'uk';return false;">&#109;s2188&#64;cam&#46;ac&#46;uk</a></p>
+      <p><b>Research interests</b></p>
+      <p><span class="label label-default">Machine Learning</span> <span class="label label-info">Bioinformatics</span> <span class="label label-primary">Computational Biology</span> <span class="label label-success">Geoscience</span></p>
+      <div id="frame" onMouseOver="$('#phase').css( 'zIndex','1' )" onMouseOut="$('#phase').css( 'zIndex','3' )">
+       <img id="module" src="img/frame_module.png" alt="Frame Module" style="margin-left:1em;z-index:2">
+       <img id="phase"  src="img/frame_module.png" alt="Frame Phase"   style="margin-top:-1em;z-index:3">
+     </div>    
+    </div>    
+   </div> <!-- .row -->   
+  </div> <!-- .container -->	
+	
+	
+	
+  <div class="container">
+	  
 	  
 
-  <div class="old col-md-4">
-  <div id="contact" class="panel panel-default">
-  <div class="panel-heading">Universidad de Granada</div>
-  <div class="panel-body">
- 	<p class="tachado">Facultad de Ciencias</p>
- 	<p class="tachado">Departamento de F&iacute;sica Aplicada</p>
- 	<p class="tachado">18071, Granada (Spain)</p>
- 	<p class="tachado"><a href="#" onClick="location.href='mail' + 'to:' + 'ms' + 'castillo@u' + 'g' + 'r.' + 'es';return false;">&#109;s&#99;astillo&#64;ugr&#46;es</a></p>
-  </div></div></div> 
-  
-  <div class="old col-md-4">
-  <div id="contact" class="panel panel-default">
-  <div class="panel-heading">Universidad de Ja&eacute;n</div>
-  <div class="panel-body">
- 	<p class="tachado">Edificio A3</p>
- 	<p class="tachado">Departamento de F&iacute;sica Aplicada</p>
- 	<p class="tachado">23071, Ja&eacute;n (Spain)</p>
- 	<p class="tachado"><a href="#" onClick="location.href='mail' + 'to:' + 'ms' + 'castill@u' + 'ja' + 'en.' + 'es';return false;"><span>&#109;s&#99;astill&#64;ujaen&#46;es</span></a></p>
-  </div></div></div>
-  
-  </div> 		
-			
-			<h2>Latest publications</h2>
-			
-	<div id="rss_scopus">
-	<script language="JavaScript" charset="UTF-8" type="text/javascript" src="http://www.feedroll.com/rssviewer/feed2js.php?src=http%3A%2F%2Fsyndic8.scopus.com%2FgetMessage%3FregistrationId%3DEECHFHKHFGCQIEDIGEDKEIDIELDLFJCOEGKLKIGJLE&chan=y&num=2&desc=1&utf=y">
-	
-	</script>
-	<!-- <script src="http://syndic8.scopus.com/getMessage?registrationId=BACGCDKGCCCPFADHDADJBEDIBJGNFEKOIHKLIBCIHU"></script> -->
-	</div>
-	
-	<script>
-	var $foo = $('#rss_scopus'), fooHtml = $foo.html() ;
-    fooHtml = fooHtml.replace(/Author\(s\):/g, '') ;
-    fooHtml = fooHtml.replace(/\|/g, ' and ') ;
-    fooHtml = fooHtml.replace(/Publication year: /g, ' (') ;
-    fooHtml = fooHtml.replace(/Journal \/ Book title:/g, ')<br/><em> ') ;
-    fooHtml = fooHtml.replace(/Access all results for your search in Scopus/g, '</em>') ;
-    $foo.html(fooHtml) ;
-	</script>
-	
-	<p>... click <a href="research.html" title="Go to Research">here</a> to see my complete scientific record.</p>
+   <div class="row">
+    <div class="alert alert-dismissable alert-warning">
+     <button type="button" class="close" data-dismiss="alert">&times;</button>
+     <h4>Notice!</h4>
+     <p>This website is under construction. In the meanwhile, you are invited to visit <a href="http://www.ugr.es/~mscastillo" class="alert-link">my academic page</a> hosted at the University of Granada.</p>
+    </div>
+   </div> 
+	  
+	  
+   <a id="welcome"></a>
+   <h1 class="page-header">Welcome</h1>
+   
+   
+   <div class="row">
+		
+     <div class="col-md-9">
+		 
+      <p>Hi, this is the academic-research website of Manuel Sánchez Castillo.</p>
+      
+      <h2>About me...</h2>
+      <p>I was born in <a href="http://en.wikipedia.org/wiki/La_L%C3%ADnea_de_la_Concepci%C3%B3n">La Línea de la Concepción</a> (<a href="http://en.wikipedia.org/wiki/Spain">Spain</a>) in <a href="http://elpais.com/tag/fecha/19810730/">July, 30th 1981</a>.</p>
+      <p>I moved to <a href="http://en.wikipedia.org/wiki/Granada">Granada</a> when I was 18 y.o. to start my universitary studies in Physics.</p>
+      <p>I got my PhD degree in the <a href="http://doctorados.ugr.es/fisica_ciencias_espacio/">Physics and Space Sciences program</a> at the <a href="http://www.ugr.es/">University of Granada</a> on 2012.</p>
+      <p>Currently, I hold a postdoctoral position in the <a href="http://hscl.cimr.cam.ac.uk/">Haematopoietic Stem Cell Laboratory</a> of the <a href="http://www.cam.ac.uk/">University of Cambridge</a>.</p>
 
-		
-			<h2>Aliases</h2>
-			
-			<p>Sanchez-Castillo, M. ; Sánchez-Castillo, M. ; Sanchez Castillo, M. ; Sánchez Castillo, M. ; Castillo, M. S.</p>
-					
+      <h2>Contact</h2>
+	  
+	  <p>Next is my current contact information at the University of Cambridge.</p>
 
-			</div>
-		
-			<div class="col-md-3">
-		
-			<h2>Hot papers <span class="fa fa-rss-square pull-right"></span></h2>
-		
-			<span class="row" id="rss-blocks">
-			
-			<div class="row" id="rss-first">
-			    <p class="rss-title"><span id="title">Bioinformatics</span><div id="fold"></div></p>
-				<script language="JavaScript" src="http://www.feedroll.com/rssviewer/feed2js.php?src=http%3A%2F%2Fbioinformatics.oxfordjournals.org%2Frss%2Fcurrent.xml&num=1&utf=y"  charset="UTF-8" type="text/javascript"></script>
-			<span></span></div>
-			<div class="row" id="rss">
-			    <p class="rss-title"><span id="title">BMC Bioinformatics</span><div id="fold"></div></p>
-				<script language="JavaScript" src="http://www.feedroll.com/rssviewer/feed2js.php?src=http%3A%2F%2Fwww.biomedcentral.com%2Fbmcbioinformatics%2Fmostviewed%2F30days%2Frss&num=1&utf=y"  charset="UTF-8" type="text/javascript"></script>
-			<span></span></div>
-			<div class="row" id="rss-last">
-			    <p class="rss-title"><span id="title">PLOS CompBio</span><div id="fold"></div></p>
-				<script language="JavaScript" src="http://www.feedroll.com/rssviewer/feed2js.php?src=http%3A%2F%2Ffeeds.plos.org%2Fploscompbiol%2FNewArticles&num=1&utf=y"  charset="UTF-8" type="text/javascript"></script>
-			<span></span></div>
-			
-			</span>
-			
-			</div>
-			
-		</div>
-		
-		
-		
-<div class="container">
-	
-			
-		<a id="education"></a>
-		<h1 class="page-header">Education</h1>
-		
-			<h2>Background</h2>
-			
-<div class="list-group">
-  <span class="list-group-item">
-    <h4 class="list-group-item-heading">List group item heading</h4>
-    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-  </span>
-  <span class="list-group-item">
-    <h4 class="list-group-item-heading">List group item heading</h4>
-    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-  </span>
-</div>
-			<h2>PhD</h2>
-			
-			
-		<a id="research"></a>
-		<h1 class="page-header">Research</h1>
-		  
-			<h2>Keywords</h2>
-		
-			<p>A summary of my research interests, in few words.</p>
-		
-			<p class="keywords">
-				<span class="label label-default">Machine Learning</span> <span class="label label-default">Signal Processing</span> <span class="label label-default">Pattern Recognition</span> <span class="label label-default">Statistical Inference</span> <span class="label label-default">Bayesian Methods</span>
-				<span class="label label-info">Bioinformatics</span> <span class="label label-info">Microarray data analysis</span> <span class="label label-info">High-throughput data analysis</span> <span class="label label-info">NGS data analysis</span> <span class="label label-info">Regulatory Networks</span>
-				<span class="label label-primary">Computational Biology</span> <span class="label label-primary">Blood Stem cells</span> <span class="label label-primary">Leukaemia</span> <span class="label label-primary">Breast Cancer</span>
-				<span class="label label-success">Geoscience</span> <span class="label label-success">Remote Sensing</span> <span class="label label-success">Satellite Imagery</span> <span class="label label-success">Multi/Hyper-spectral Image Analysis</span>
-			</p>
-			
-			<h2>Work and projects</h2>
-			<h2>Internships</h2>
-			
-		<a id="publications"></a>
-		<h1 class="page-header">Publications</h1>
-			<h2>Papers (peer-reviewed journals)</h2>
-			<h2>Conferences</h2>
-			<h3>International conferences</h3>
-			<h3>National conferences (Spain)</h3>
-			<h2>Others</h2>
-			
-			
-			<a id="links"></a>
-			<h1 class="page-header">Links</h1>
-			
-			<h2>On-line resources</h2>		
-			<dl class="dl-horizontal">
-				<dt><a href="http://codex.stemcells.cam.ac.uk/" target="_blank">CODEX</a></dt>
-				<dd>A NGS experiment database for the haematopoietic and embryonic stem cell communities</dd>
-			</dl>
-			
-			<h2>Training and learning</h2>		
-			<dl class="dl-horizontal">
-				<dt><a href="http://www.mygoblet.org/training-portal" target="_blank">GOBLET's Training portal</a></dt>
-				<dd>Bioinformatics courses and learning material at GOBLET</dd>
-				<dt><a href="http://en.wikibooks.org/wiki/Next_Generation_Sequencing_%28NGS%29" target="_blank">NGS wikibook</a></dt>
-				<dd>A collaborative wikibook on NGS</dd>
-				<dt><a href="https://www.coursera.org/specialization/systemsbiology/6?utm_medium=courseDescripTop" target="_blank">Systems Biology</a></dt>
-				<dd>COURSERA's Systems Biology courses from the Icahn School of Medicine at Mount Sinai</dd>
-			</dl>
-			
-			<h2>Institutions</h2>		
-			<dl class="dl-horizontal">
-				<dt><a href="http://www.inab.org/" target="_blank">INAB</a></dt>
-				<dd>Spanish's National Institute of Bioinformatics</dd>
-				<dt><a href="http://www.iscb.org/" target="_blank">ISCB</a></dt>
-				<dd>International Society for Computational Biology</dd>
-			</dl>		
-			
-</div>
-
-
-
-
-	<script type="text/javascript">$('[data-toggle="tooltip"]').tooltip();</script>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../assets/js/bootswatch.js"></script>
+	  <div class="row">
+      <div class="old col-md-1"></div>
+      <div class="old col-md-10">
+      <div class="alert alert-info" style="line-height:1em;background:#006699;border-color:#004466">		  
+       <p style="font-size:1.5em;font-weight:bold">University of Cambridge</p>
+       <p style="font-size:1.25em;font-style:normal">Department of Haematology</p>
+       <p>Cambridge Institute for Medical Research</p>
+       <p>Haematopoietic Stem Cell Laboratory</p>
+       <p>CB2 0XY, Cambridge, United Kingdom</p>
+       <p><a href="#" onClick="location.href='ma' + 'ilto' + ':ms21' + '88@' + 'cam.' + 'ac.' + 'uk';return false;" class="alert-link">&#109;s2188&#64;cam&#46;ac&#46;uk</a></p>
+	  </div>
+	  </div></div>
+	  	  
+      <h2>My latest publications</h2>
+      <div id="rss_scopus">
+       <script language="JavaScript" charset="UTF-8" type="text/javascript" src="http://www.feedroll.com/rssviewer/feed2js.php?src=http%3A%2F%2Fsyndic8.scopus.com%2FgetMessage%3FregistrationId%3DEECHFHKHFGCQIEDIGEDKEIDIELDLFJCOEGKLKIGJLE&chan=y&num=2&desc=1&utf=y"></script>
+      </div>
+      
+      <script>
+	   var $foo = $('#rss_scopus'), fooHtml = $foo.html() ;
+	   fooHtml = fooHtml.replace(/Author\(s\):/g, '') ;
+	   fooHtml = fooHtml.replace(/\|/g, ' and ') ;
+	   fooHtml = fooHtml.replace(/Publication year: /g, ' (') ;
+	   fooHtml = fooHtml.replace(/Journal \/ Book title:/g, ')<br/><em> ') ;
+	   fooHtml = fooHtml.replace(/Access all results for your search in Scopus/g, '</em>') ;
+	   $foo.html(fooHtml) ;
+	  </script>
+	  
+	  <p>... click <a href="#research" title="Go to Research">here</a> to see my complete scientific record.</p>
+	  
+	  <h2>Previous affiliations</h2>
+	  
+	  <p>Next are listed my previous previous affiliations.</p>
+	  
+      <div class="row">
+       <div class="old col-md-1"></div>
+       <div class="old col-md-5"><div class="alert alert-info" style="line-height:1em;background:#999999;border-color:#7F7F7F">		  
+        <p style="font-size:1.5em;font-weight:bold">University of Granada</p>
+        <p style="font-size:1.25em;font-style:normal">Department of Applied Physics</p>
+        <p>Facultad de Ciencias</p>
+        <p>18071, Granada, Spain</p>
+        <p><a href="#" onClick="location.href='mail' + 'to:' + 'ms' + 'castillo@u' + 'g' + 'r.' + 'es';return false;" class="alert-link">&#109;s&#99;astillo&#64;ugr&#46;es</a></p>
+	   </div></div>
+       <div class="old col-md-5"><div class="alert alert-info" style="line-height:1em;background:#999999;border-color:#7F7F7F">		  
+        <p style="font-size:1.5em;font-weight:bold">University of Jaen</p>
+        <p style="font-size:1.25em;font-style:normal">Department of Applied Physics</p>
+        <p>Facultad de Ciencias</p>
+        <p>23071, Jaen, Spain</p>
+        <p><a href="#" onClick="location.href='mail' + 'to:' + 'ms' + 'castill@u' + 'ja' + 'en.' + 'es';return false;" class="alert-link"><span>&#109;s&#99;astill&#64;ujaen&#46;es</span></a></p>
+	   </div> </div>
+	  </div>
+	  
+	  <h2>Aliases</h2>
+	  <p>Sanchez-Castillo, M. ; Sánchez-Castillo, M. ; Sanchez Castillo, M. ; Sánchez Castillo, M. ; Castillo, M. S.</p>
+	  
+     </div> <!-- .col-md-9 -->
+     		 
+     <div class="col-md-3">
+		 		 
+	  <h2>Hot papers <span class="badge" style="background:#EE5921"><span class="glyphicon glyphicon-fire"></span></span></h2>
+	  <span class="row" id="rss-blocks">
+       <div class="row" id="rss-first">
+        <p class="rss-title"><span id="title">Bioinformatics</span><div id="fold"></div></p>
+        <script language="JavaScript" src="http://www.feedroll.com/rssviewer/feed2js.php?src=http%3A%2F%2Fbioinformatics.oxfordjournals.org%2Frss%2Fcurrent.xml&num=1&utf=y"  charset="UTF-8" type="text/javascript"></script>
+       </div>
+	   <div class="row" id="rss">
+		<p class="rss-title"><span id="title">BMC Bioinformatics</span><div id="fold"></div></p>
+		<script language="JavaScript" src="http://www.feedroll.com/rssviewer/feed2js.php?src=http%3A%2F%2Fwww.biomedcentral.com%2Fbmcbioinformatics%2Fmostviewed%2F30days%2Frss&num=1&utf=y"  charset="UTF-8" type="text/javascript"></script>
+	   </div>
+	   <div class="row" id="rss">
+		<p class="rss-title"><span id="title">Nature Biotechnology</span><div id="fold"></div></p>
+		<script language="JavaScript" src="http://www.feedroll.com/rssviewer/feed2js.php?src=http%3A%2F%2Fwww.nature.com%2Fnbt%2Fjournal%2Fvaop%2Fncurrent%2Frss.rdf&num=1&utf=y"  charset="UTF-8" type="text/javascript"></script>
+	   </div>
+ <!--
+		<div class="row" id="rss">
+		<p class="rss-title"><span id="title">PLOS CompBio</span><div id="fold"></div></p>
+		<script language="JavaScript" src="http://www.feedroll.com/rssviewer/feed2js.php?src=http%3A%2F%2Ffeeds.plos.org%2Fploscompbiol%2FNewArticles&num=1&utf=y"  charset="UTF-8" type="text/javascript"></script>
+	   </div>
+-->
+	   <div class="row" id="rss-last">
+		<p class="rss-title"><span id="title">Nature Review Genetics</span><div id="fold"></div></p>
+		<script language="JavaScript" src="http://www.feedroll.com/rssviewer/feed2js.php?src=http%3A%2F%2Ffeeds.nature.com%2Fnrg%2Frss%2Faop&num=1&utf=y"  charset="UTF-8" type="text/javascript"></script>
+	   </div>
+	  </span>	  
+	    	
+	 </div> <!-- .col-md-3 -->
+       
+    </div> <!-- .row -->
     
-  </body>
+    
+    <div class="row">		
+    <a id="education"></a>
+    <h1 class="page-header">Education</h1>
+
+		
+     <p>The following academic merits are officially certificated by theirs respective organisms and they can be proven on demand.</p>
+
+     <h2>Background</h2>
+     
+     <div class="well">
+   	  <ul class="university">
+	   <li class="title">Bachelor's Degree in <a href="http://physica.ugr.es/fisica/estudiosfisicas/" target="_blank">Physics</a></li>
+	   <li class="organism"><a href="http://www.ugr.es" target="_blank">University of Granada</a> (September, 2007)</li>
+	  </ul>
+	 </div>
+	 
+     <h2>PhD</h2>     
+ 
+     <div class="well"><ul class="university">
+	   <li class="title">Master's Degree in <a href="http://masteres.ugr.es/mtaf/" class="alert-link" target="_blank">Advanced Methods and Techniques in Physics</a></li>
+	   <li class="thesis">Master Thesis entitled <em>Advanced Methods in Signal Processing with Applications in Genomics</em></li>
+	   <li class="organism"><a href="http://www.ugr.es" target="_blank">University of Granada</a> (December, 2009)</li>
+	   <li class="bibtex" style="margin-top:1em">
+		<button type="button" class="btn btn-default btn-xs" onclick="$(this).parent().find('.cite').slideToggle('fast');">BibTeX<span class="glyphicon glyphicon-bookmark" style="padding-left:0.5em"></span></button>
+	    <div class="cite list-group" style="display:none;margin-top:1em">		
+		<span class="list-group-item" style="margin-top:0.5em;color:#777777"><button onclick="$(this).parents('.cite').hide();" class="close pull-right" type="button" style="color:#333333">×</button>
+ 	     @mastersthesis{<br />
+	     author = "M. Sanchez-Castillo",<br />
+	     title = "Técnicas Avanzadas en Procesado de Señal con Aplicaciones en Genómica",<br />
+  	     school = "Universidad de Granada",<br />
+ 	     year = "2009",<br />
+ 	     note = "ISBN: 978-84-615-8100-9",<br />
+ 	     }
+	   </span>
+	   </div>
+	  </li>
+	  </ul></div>
+ 
+     <div class="well"><ul class="university">
+	   <li class="title">PhD in the <a href="http://doctorados.ugr.es/fisica_ciencias_espacio/" target="_blank">Physics and Space Science program</a></li>
+	   <li class="thesis">PhD Thesis entitled <em>Bayesian methods for inferring gene regulatory networks and protein profiles from gene expression microarrays data</em></li>
+	   <li class="organism"><a href="http://www.ugr.es" target="_blank">University of Granada</a> (December, 2012)</li>
+	   <li class="bibtex" style="margin-top:1em">
+		<button type="button" class="btn btn-default btn-xs" onclick="$(this).parent().find('.cite').slideToggle('fast');">BibTeX<span class="glyphicon glyphicon-bookmark" style="padding-left:0.5em"></span></button>
+	    <div class="cite list-group" style="display:none;margin-top:1em">		
+		<span class="list-group-item" style="margin-top:0.5em;color:#777777"><button onclick="$(this).parents('.cite').hide();" class="close pull-right" type="button" style="color:#333333">×</button>
+ 	     @phdthesis{<br />
+	     author = "M. Sanchez-Castillo",<br />
+	     title = "Métodos bayesianos para la estimación de redes reguladoras de genes y de perfiles de proteínas a partir de microarrays de expresión genética",<br />
+  	     school = "Universidad de Granada",<br />
+ 	     year = "2012",<br />
+ 	     note = "ISBN: 978-84-9028-501-5",<br />
+ 	     }
+	   </span>
+	   </div>
+	  </li>
+	  </ul></div>
+
+    </div> <!-- .row -->		
+
+
+    <div class="row">
+    <a id="research"></a>
+    <h1 class="page-header">Research</h1>
+
+
+     <h2>Keywords</h2>
+      <p>A summary of my research interests, in few words.</p>
+      <p class="keywords">
+       <span class="label label-default">Machine Learning</span> <span class="label label-default">Signal Processing</span> <span class="label label-default">Pattern Recognition</span> <span class="label label-default">Statistical Inference</span> <span class="label label-default">Bayesian Methods</span>
+       <span class="label label-info">Bioinformatics</span> <span class="label label-info">Microarray data analysis</span> <span class="label label-info">High-throughput data analysis</span> <span class="label label-info">NGS data analysis</span> <span class="label label-info">Regulatory Networks</span>
+       <span class="label label-primary">Computational Biology</span> <span class="label label-primary">Blood Stem cells</span> <span class="label label-primary">Leukaemia</span> <span class="label label-primary">Breast Cancer</span>
+       <span class="label label-success">Geoscience</span> <span class="label label-success">Remote Sensing</span> <span class="label label-success">Satellite Imagery</span> <span class="label label-success">Multi/Hyper-spectral Image Analysis</span>
+      </p>
+      
+      <h2>Work and projects</h2>
+      
+      <h2>Internships</h2>
+		
+    </div> <!-- .row -->
+
+
+    <a id="publications"></a>
+    <h1 class="page-header">Publications</h1>
+        
+    <div class="row">    
+    
+     <h2>Papers (peer-reviewed journals)</h2>
+     
+     <h2>Conferences</h2>
+     
+     <h3>International conferences</h3>
+     <h3>National conferences (Spain)</h3>
+     
+     <h2>Others</h2>
+     
+    </div> <!-- .row -->
+    
+    
+    <div class="row">  
+    <a id="links"></a>
+    <h1 class="page-header">Links</h1>
+      
+		
+     <h2>On-line resources</h2>		
+	 <dl class="dl-horizontal">
+	  <dt><a href="http://codex.stemcells.cam.ac.uk/" target="_blank">CODEX</a></dt>
+	  <dd>A NGS experiment database for the haematopoietic and embryonic stem cell communities</dd>
+	 </dl>
+	 <h2>Training and learning</h2>		
+	 <dl class="dl-horizontal">
+	  <dt><a href="http://www.mygoblet.org/training-portal" target="_blank">GOBLET's Training portal</a></dt>
+	  <dd>Bioinformatics courses and learning material at GOBLET</dd>
+	  <dt><a href="http://en.wikibooks.org/wiki/Next_Generation_Sequencing_%28NGS%29" target="_blank">NGS wikibook</a></dt>
+	  <dd>A collaborative wikibook on NGS</dd>
+	  <dt><a href="https://www.coursera.org/specialization/systemsbiology/6?utm_medium=courseDescripTop" target="_blank">Systems Biology</a></dt>
+	  <dd>COURSERA's Systems Biology courses from the Icahn School of Medicine at Mount Sinai</dd>
+	 </dl>
+	 <h2>Institutions</h2>
+	  <dl class="dl-horizontal">
+	   <dt><a href="http://www.inab.org/" target="_blank">INAB</a></dt>
+	   <dd>Spanish's National Institute of Bioinformatics</dd>
+	   <dt><a href="http://www.iscb.org/" target="_blank">ISCB</a></dt>
+	   <dd>International Society for Computational Biology</dd>
+	  </dl>
+	  
+   </div> <!-- .row -->
+	 
+	 
+	 
+  </div> <!-- .container -->
+   
+
+
+  <script type="text/javascript">$('[data-toggle="tooltip"]').tooltip();</script>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../assets/js/bootswatch.js"></script>
+  
+  
+ </body>
+ 
+ 
 </html>
