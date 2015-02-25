@@ -74,3 +74,30 @@ line-height:1.5em ;
 
 ul.university li a {
 }
+
+
+ul.courses {
+list-style:none ;
+margin:0em ;
+padding:0em ;
+}
+
+ul.courses li {
+margin-bottom:2em ;
+font-size:1em ;
+border-left:solid 2px #9EBBC4 ;
+padding-left:1em ;
+padding-bottom:0.5em ;
+}
+
+ul.courses li .title {
+display:block ;
+width:100% ;
+font-size:1.3em ;
+}
+
+ul.courses li .organism {
+display:block ;
+width:100% ;
+}
+
