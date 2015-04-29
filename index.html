@@ -104,7 +104,7 @@
        <li>			
         <div class="btn-group wienner" style="margin-top:0.8em" >
          <a href="#" class="btn btn-xs btn-danger active" onClick="$('.wienner').hide();$('.wienner_on').show();return false">OFF</a>
-         <a href="#" class="btn btn-xs btn-primary disabled" style="top:1.5px; border-bottom-width:2.5px; box-shadow: 0 0 10px #0099FF">ON</a>
+         <a href="#" class="btn btn-xs btn-primcary disabled" style="top:1.5px; border-bottom-width:2.5px; box-shadow: 0 0 10px #0099FF">ON</a>
         </div>
        </li>
       </ul>
@@ -171,7 +171,7 @@
       <p>I was born in <a href="http://en.wikipedia.org/wiki/La_L%C3%ADnea_de_la_Concepci%C3%B3n">La Línea de la Concepción</a> (<a href="http://en.wikipedia.org/wiki/Spain">Spain</a>) in <a href="http://elpais.com/tag/fecha/19810730/">July, 30th 1981</a>.</p>
       <p>I moved to <a href="http://en.wikipedia.org/wiki/Granada">Granada</a> when I was 18 y.o. to start my universitary studies in Physics.</p>
       <p>I got my PhD degree in the <a href="http://doctorados.ugr.es/fisica_ciencias_espacio/">Physics and Space Sciences program</a> at the <a href="http://www.ugr.es/">University of Granada</a> on 2012.</p>
-      <p>Currently, I hold a postdoctoral position in the <a href="http://hscl.cimr.cam.ac.uk/">Haematopoietic Stem Cell Laboratory</a> of the <a href="http://www.cam.ac.uk/">University of Cambridge</a>.</p>
+      <p>In April 2015, after two years as a postdoct in the <a href="http://hscl.cimr.cam.ac.uk/">Haematopoietic Stem Cell Laboratory</a> of the <a href="http://www.cam.ac.uk/">University of Cambridge</a>, I joined to the Computational Biology group of a biotechnology company settled in Spain.</p>
 
       <h2>Contact</h2>
 	  
@@ -190,28 +190,21 @@
 	  </div>
 	  </div></div>
 	  	  
-      <h2>My latest publications</h2>
-      <div id="rss_scopus">
-       <script language="JavaScript" charset="UTF-8" type="text/javascript" src="http://www.feedroll.com/rssviewer/feed2js.php?src=http%3A%2F%2Fsyndic8.scopus.com%2FgetMessage%3FregistrationId%3DEECHFHKHFGCQIEDIGEDKEIDIELDLFJCOEGKLKIGJLE&chan=y&num=2&desc=1&utf=y"></script>
-      </div>
-      
-      <script>
-	   var $foo = $('#rss_scopus'), fooHtml = $foo.html() ;
-	   fooHtml = fooHtml.replace(/Author\(s\):/g, '') ;
-	   fooHtml = fooHtml.replace(/\|/g, ' and ') ;
-	   fooHtml = fooHtml.replace(/Publication year: /g, ' (') ;
-	   fooHtml = fooHtml.replace(/Journal \/ Book title:/g, ')<br/><em> ') ;
-	   fooHtml = fooHtml.replace(/Access all results for your search in Scopus/g, '</em>') ;
-	   $foo.html(fooHtml) ;
-	  </script>
-	  
-	  <p>... click <a href="#research" title="Go to Research">here</a> to see my complete scientific record.</p>
-	  
+	  	 
 	  <h2>Previous affiliations</h2>
 	  
 	  <p>Next are listed my previous previous affiliations.</p>
 	  
       <div class="row">
+       <div class="old col-md-1"></div>
+       <div class="old col-md-10"><div class="alert alert-info" style="line-height:1em;background:#999999;border-color:#7F7F7F">		  
+        <p style="font-size:1.5em;font-weight:bold">University of Cambridge</p>
+        <p style="font-size:1.25em;font-style:normal">Department of Haematology</p>
+        <p>Cambridge Institute for Medical Research</p>
+        <p>Haematopoietic Stem Cell Laboratory</p>
+        <p>CB2 0XY, Cambridge, United Kingdom</p>
+        <p><a href="#" onClick="location.href='ma' + 'ilto' + ':ms21' + '88@' + 'cam.' + 'ac.' + 'uk';return false;" class="alert-link">&#109;s2188&#64;cam&#46;ac&#46;uk</a></p>
+       </div></div>
        <div class="old col-md-1"></div>
        <div class="old col-md-5"><div class="alert alert-info" style="line-height:1em;background:#999999;border-color:#7F7F7F">		  
         <p style="font-size:1.5em;font-weight:bold">University of Granada</p>
@@ -231,6 +224,25 @@
 	  
 	  <h2>Aliases</h2>
 	  <p class="aliases"><span class="label label-warning">Sanchez-Castillo, M.</span><span class="label label-warning">Sánchez-Castillo, M.</span><span class="label label-warning">Sanchez Castillo, M.</span><span class="label label-warning">Sánchez Castillo, M.</span><span class="label label-warning">Castillo, M. S.</p>
+	   
+	  	  
+	  	  
+      <h2>My latest publications</h2>
+      <div id="rss_scopus">
+       <script language="JavaScript" charset="UTF-8" type="text/javascript" src="http://www.feedroll.com/rssviewer/feed2js.php?src=http%3A%2F%2Fsyndic8.scopus.com%2FgetMessage%3FregistrationId%3DEECHFHKHFGCQIEDIGEDKEIDIELDLFJCOEGKLKIGJLE&chan=y&num=2&desc=1&utf=y"></script>
+      </div>
+      
+      <script>
+	   var $foo = $('#rss_scopus'), fooHtml = $foo.html() ;
+	   fooHtml = fooHtml.replace(/Author\(s\):/g, '') ;
+	   fooHtml = fooHtml.replace(/\|/g, ' and ') ;
+	   fooHtml = fooHtml.replace(/Publication year: /g, ' (') ;
+	   fooHtml = fooHtml.replace(/Journal \/ Book title:/g, ')<br/><em> ') ;
+	   fooHtml = fooHtml.replace(/Access all results for your search in Scopus/g, '</em>') ;
+	   $foo.html(fooHtml) ;
+	  </script>
+	  
+	  <p>... click <a href="#research" title="Go to Research">here</a> to see my complete scientific record.</p>
 	  
      </div> <!-- .col-md-9 -->
      		 
