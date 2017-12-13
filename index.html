@@ -63,9 +63,11 @@
       <li>
         <a href="#research">Research</a>
       </li>
+ <!-- 
       <li>
         <a href="#publications">Publications</a>
       </li>
+-->
       <li class="dropdown">
        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles<b class="caret"></b></a>
       	<ul class="dropdown-menu">
@@ -293,20 +295,22 @@
      <p>The following academic merits are officially certificated by theirs respective organisms and they can be proven on demand.</p>
 -->
 
-     <h2>Background</h2>
+     <h2>Background
+	<small class="btn btn-xs btn-default" onclick="$('.background').slideToggle('fast');"><b class="glyphicon glyphicon-info-sign"></b></small>.
+     </h2>
      
-     <div class="well">
+     <div class="well">	     
    	  <ul class="university">
 	   <li class="title">Bachelor's Degree in <a href="http://physica.ugr.es/fisica/estudiosfisicas/" target="_blank">Physics</a></li>
 	   <li class="organism"><a href="http://www.ugr.es" target="_blank">University of Granada</a> (September, 2007)</li>
 	  </ul>
-	 </div>
+     </div>
+	    
+    <span class="background"  style="display:none">
 	 
-     <p>Besides my Degree in Physics, I have reinforced my education by taking additional computer science and programming courses
-     <small class="btn btn-xs btn-default" onclick="$('.courses').slideToggle('fast');"><b class="glyphicon glyphicon-info-sign"></b></small>.
-     </p>
+     <p>Besides my Degree in Physics, I have reinforced my education in computer science by taking additional programming courses:</p>
 
-     <ul class="courses"  style="display:none">
+     <ul class="courses">
 	
    	 <li>
 	  <span class="title">Introduction to Linux</span>
@@ -333,12 +337,13 @@
 	 </li>
 	 
      </ul>
+	    
+    </span>
 
-
-     <h2>PhD</h2>
+     <h2>PhD
+     	<small class="btn btn-xs btn-default" onclick="$('.phd').slideToggle('fast');"><b class="glyphicon glyphicon-info-sign"></b></small>.
+     </h2>
      
-     <p>During my MSc and PhD degrees, I have conducted my research in Machine Learning applied to Genomics and Geoscience.</p>
-
       <div class="well"><ul class="university">
 	   <li class="title">Master's Degree in <a href="http://masteres.ugr.es/mtaf/" class="alert-link" target="_blank">Advanced Methods and Techniques in Physics</a></li>
 	   <li class="thesis">Master Thesis entitled <em>Advanced Methods in Signal Processing with Applications in Genomics</em></li>
@@ -379,11 +384,12 @@
 	  </li>
 	  </ul></div>
 	  
-     <p>During my PhD, I have developed my skills in Computational Biology and Bioinformatics by participating in different <a href="#research" title="Go to Research">research</a> activities and by taking additional courses
-     <small class="btn btn-xs btn-default" onclick="$('.phd').slideToggle('fast');"><b class="glyphicon glyphicon-info-sign"></b></small>.
-     </p>
+	    
+     <span class="courses phd" style="display:none">
+		
+     <p>During my PhD, I have developed my skills in Computational Biology and Bioinformatics by participating in different <a href="#research" title="Go to Research">research</a> activities and taking additional courses:</p>
 
-	<ul class="courses phd" style="display:none">
+	<ul class="courses">
    	 <li>
 	  <span class="title">Bayesian Networks (Advanced Statistics and Data Mining Summerschool)</span>
 	  <span class="organism"><a href="http://www.dia.fi.upm.es/">Department of Artificial Intelligence</a> of the <a href="http://www.upm.es/">Polytechnic University of Madrid</a>.</span>
@@ -425,7 +431,10 @@
 	  <span class="type">Certificate of Attendance (<a href="http://training.csx.cam.ac.uk/event/1186596">8 hours</a>).</span> <span class="date">September, 2014.</span>
 	 </li>
 	</ul>
-
+	     
+    </span>
+	     
+	    
     </div> <!-- .row -->		
 
 
@@ -443,14 +452,17 @@
        <span class="label label-primary">Computational Biology</span> <span class="label label-primary">Blood Stem cells</span> <span class="label label-primary">Leukaemia</span> <span class="label label-primary">Breast Cancer</span>
        <span class="label label-success">Geoscience</span> <span class="label label-success">Remote Sensing</span> <span class="label label-success">Satellite Imagery</span> <span class="label label-success">Multi/Hyper-spectral Image Analysis</span>
       </p>
-      
+	    
+<!-- 
+
       <h2>Work and projects</h2>
       
       <h2>Internships</h2>
-		
+-->		
     </div> <!-- .row -->
 
    
+<!-- 
     <div class="row">    
     <a id="publications"></a>
     <h1 class="page-header">Publications</h1>
@@ -467,7 +479,8 @@
      
     </div> <!-- .row -->
     
-    
+-->    
+
     <div class="row">  
     <a id="links"></a>
     <h1 class="page-header">Links</h1>
