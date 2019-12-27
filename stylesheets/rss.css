@@ -95,7 +95,7 @@ display:block ;
 }
 
 span#rss-blocks div ul.rss-items li span.rss-date {
-padding-left:1em ;
+display:block;
 }
 
 
