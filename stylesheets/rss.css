@@ -26,6 +26,7 @@ display:block ; /**/
 width:100%-25px ;
 border:none ;
 font-size:2em ;
+color:#FFFFFF
 }
 
 
@@ -48,6 +49,10 @@ color:#FFFFFF ;
 border:none ;
 padding-left:1em ;
 margin-top:1em ;
+}
+
+span#rss-blocks div p.rss-title span#title a {
+color:#FFFFFF ;
 }
 
 span#rss-blocks div#fold {
@@ -90,6 +95,7 @@ display:block ;
 }
 
 span#rss-blocks div ul.rss-items li span.rss-date {
+padding-left:1em ;
 }
 
 
