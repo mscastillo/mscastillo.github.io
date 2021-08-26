@@ -29,8 +29,7 @@ font-size:2em ;
 color:#FFFFFF
 }
 
-
-span#rss-blocks div p.rss-title {
+li#rss-item a.rss-item {
 display:block ;
 width:100% - 20px ;
 margin:0px ;
@@ -127,8 +126,7 @@ padding-bottom:0.5em ;
 }
 
 div#rss_scopus div.rss-box li.rss-item a {
-font-size:1.5em ;
-line-height:1em ;
+display:none
 }
 
 div#rss_scopus div.rss-box li.rss-item br {
