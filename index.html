@@ -27,7 +27,7 @@
   <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
   <script type="text/javascript" src="javascript.js"></script>
   <script type="text/javascript" src="processing.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 
   
  </head>
@@ -244,12 +244,10 @@
       <div id="rss_scopus">
 	  </div>
 	  <script>
-	  </script>
-	  
-	  
+	   $("#rss_scopus").load("https://pubmed.ncbi.nlm.nih.gov/rss/search/1z3zFLTMk-jx9dXgtE0myQA09eriOhtVvAi2_bsWn4xyladEgb/?limit=5&utm_campaign=pubmed-2&fc=20210826133902 item title");
+	  </script>  
       
       <script>
-	   $('#rss_scopus').load('https://pubmed.ncbi.nlm.nih.gov/rss/search/1z3zFLTMk-jx9dXgtE0myQA09eriOhtVvAi2_bsWn4xyladEgb/?limit=5&utm_campaign=pubmed-2&fc=20210826133902');
 	   var $foo = $('#rss_scopus'), fooHtml = $foo.html() ;
 	   fooHtml = fooHtml.replace(/Author\(s\):/g, '') ;
 	   fooHtml = fooHtml.replace(/\|/g, ' and ') ;
@@ -257,7 +255,7 @@
 	   fooHtml = fooHtml.replace(/Journal \/ Book title:/g, ')<br/><em> ') ;
 	   fooHtml = fooHtml.replace(/Access all results for your search in Scopus/g, '</em>') ;
 	   $foo.html(fooHtml) ;
-     </script>
+      </script>
 	  
 	  <p>... click <a href="https://scholar.google.es/citations?user=qulgu8EAAAAJ" title="Google Scholar" target="_blank">here</a> to see my complete scientific record at Google Scholar.</p>
 	  
