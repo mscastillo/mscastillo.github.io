@@ -29,7 +29,8 @@ font-size:2em ;
 color:#FFFFFF
 }
 
-li#rss-item a.rss-item {
+
+span#rss-blocks div p.rss-title {
 display:block ;
 width:100% - 20px ;
 margin:0px ;
@@ -123,6 +124,11 @@ font-size:1em ;
 border-left:solid 2px #9EBBC4 ;
 padding-left:1em ;
 padding-bottom:0.5em ;
+}
+
+div#rss_scopus div.rss-box li.rss-item a {
+font-size:1.5em ;
+line-height:1em ;
 }
 
 div#rss_scopus div.rss-box li.rss-item br {
