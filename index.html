@@ -27,6 +27,8 @@
   <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
   <script type="text/javascript" src="javascript.js"></script>
   <script type="text/javascript" src="processing.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
   
  </head>
 
@@ -240,18 +242,14 @@
 	  	  
       <h2>My latest publications</h2>
       <div id="rss_scopus">
-
-      </div>
-	  
+	  </div>
 	  <script>
-	   url = "https://pubmed.ncbi.nlm.nih.gov/rss/search/1z3zFLTMk-jx9dXgtE0myQA09eriOhtVvAi2_bsWn4xyladEgb/?limit=5&utm_campaign=pubmed-2&fc=20210826133902"
-       var para = document.getElementById('rss_scopus');
-       var par = document.createElement("object");
-       par.setAttribute('data', url);
-       para.appendChild(par);
 	  </script>
+	  
+	  
       
       <script>
+	   $('#rss_scopus').load('https://pubmed.ncbi.nlm.nih.gov/rss/search/1z3zFLTMk-jx9dXgtE0myQA09eriOhtVvAi2_bsWn4xyladEgb/?limit=5&utm_campaign=pubmed-2&fc=20210826133902');
 	   var $foo = $('#rss_scopus'), fooHtml = $foo.html() ;
 	   fooHtml = fooHtml.replace(/Author\(s\):/g, '') ;
 	   fooHtml = fooHtml.replace(/\|/g, ' and ') ;
